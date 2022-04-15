@@ -84,14 +84,14 @@ class Character extends FlxSprite
 
 			case 'dad':
 				// DAD ANIMATION LOADING CODE
-				tex = Paths.getSparrowAtlas('DADDY_DEAREST', 'shared', true);
+				tex = Paths.getSparrowAtlas('SonicFunAssets', 'shared', true);
 				frames = tex;
-				animation.addByPrefix('idle', 'Dad idle dance', 24, false);
-				animation.addByPrefix('singUP', 'Dad Sing Note UP', 24, false);
-				animation.addByPrefix('singRIGHT', 'Dad Sing Note RIGHT', 24, false);
-				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24, false);
-				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24, false);
-				animation.addByIndices('idleLoop', "Dad idle dance", [11, 12], "", 12, true);
+				animation.addByPrefix('idle', 'SONICFUNIDLE instance', 24, false);
+				animation.addByPrefix('singUP', 'SONICFUNUP instance', 24, false);
+				animation.addByPrefix('singRIGHT', 'SONICFUNRIGHT instance', 24, false);
+				animation.addByPrefix('singDOWN', 'SONICFUNDOWN instance ', 24, false);
+				animation.addByPrefix('singLEFT', 'SONICFUNLEFT instance ', 24, false);
+				animation.addByIndices('idleLoop', "SONICFUNIDLE instance", [11, 12], "", 12, true);
 
 				loadOffsetFile(curCharacter);
 				barColor = 0xFFaf66ce;
